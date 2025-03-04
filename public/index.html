@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Example</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <section class="banner-page">
+        <div class="banner-page__logo">
+          <img src="assets/logo/Logo.svg" alt="logo" />
+        </div>
+        <div class="banner-page__nav">
+          <div class="navigation">
+            <div class="navigation__text">
+              <div class="navigation__text-item">
+                <h6>New & Featured</h6>
+                <h6>Collection</h6>
+                <h6>Customize</h6>
+                <h6>About us</h6>
+                <h6>Blog</h6>
+              </div>
+            </div>
+            <div class="navigation__icons">
+              <div class="navigation__icons-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_14_202)">
+                    <path
+                      d="M15.8045 14.8625L11.8252 10.8831C12.9096 9.55687 13.4428 7.86453 13.3144 6.15618C13.1861 4.44783 12.406 2.85416 11.1356 1.70482C9.86516 0.55548 8.20158 -0.0615992 6.48895 -0.018778C4.77632 0.0240432 3.14566 0.723488 1.93426 1.93488C0.72287 3.14627 0.0234252 4.77693 -0.019396 6.48957C-0.0622172 8.2022 0.554862 9.86578 1.7042 11.1362C2.85354 12.4066 4.44721 13.1867 6.15556 13.315C7.86392 13.4434 9.55625 12.9102 10.8825 11.8258L14.8619 15.8051C14.9876 15.9266 15.156 15.9938 15.3308 15.9923C15.5056 15.9907 15.6728 15.9206 15.7964 15.797C15.92 15.6734 15.9901 15.5062 15.9916 15.3314C15.9932 15.1566 15.926 14.9882 15.8045 14.8625ZM6.66652 12.0005C5.61169 12.0005 4.58054 11.6877 3.70348 11.1016C2.82642 10.5156 2.14283 9.68266 1.73916 8.70812C1.3355 7.73358 1.22988 6.66122 1.43567 5.62666C1.64145 4.59209 2.14941 3.64178 2.89529 2.8959C3.64117 2.15002 4.59147 1.64207 5.62604 1.43628C6.6606 1.2305 7.73296 1.33611 8.7075 1.73978C9.68204 2.14345 10.515 2.82704 11.101 3.7041C11.6871 4.58116 11.9999 5.61231 11.9999 6.66714C11.9983 8.08114 11.4359 9.43677 10.436 10.4366C9.43615 11.4365 8.08052 11.9989 6.66652 12.0005Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_14_202">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="navigation__icons-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M8 8C8.79113 8 9.56449 7.76541 10.2223 7.32588C10.8801 6.88635 11.3928 6.26164 11.6955 5.53074C11.9983 4.79983 12.0775 3.99556 11.9231 3.21964C11.7688 2.44372 11.3878 1.73098 10.8284 1.17157C10.269 0.612165 9.55629 0.231202 8.78036 0.0768607C8.00444 -0.0774802 7.20017 0.00173314 6.46927 0.304484C5.73836 0.607234 5.11365 1.11992 4.67412 1.77772C4.2346 2.43552 4 3.20888 4 4C4.00106 5.06054 4.42283 6.07734 5.17274 6.82726C5.92266 7.57718 6.93946 7.99894 8 8ZM8 1.33334C8.52742 1.33334 9.04299 1.48973 9.48152 1.78275C9.92005 2.07577 10.2618 2.49224 10.4637 2.97951C10.6655 3.46678 10.7183 4.00296 10.6154 4.52024C10.5125 5.03753 10.2586 5.51268 9.88562 5.88562C9.51268 6.25856 9.03752 6.51254 8.52024 6.61543C8.00296 6.71832 7.46678 6.66551 6.97951 6.46368C6.49224 6.26185 6.07576 5.92005 5.78275 5.48152C5.48973 5.04299 5.33333 4.52742 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61429 7.29276 1.33334 8 1.33334Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M8 9.33333C6.40924 9.3351 4.88414 9.9678 3.75931 11.0926C2.63447 12.2175 2.00176 13.7426 2 15.3333C2 15.5101 2.07024 15.6797 2.19526 15.8047C2.32029 15.9298 2.48986 16 2.66667 16C2.84348 16 3.01305 15.9298 3.13807 15.8047C3.2631 15.6797 3.33333 15.5101 3.33333 15.3333C3.33333 14.0957 3.825 12.9087 4.70017 12.0335C5.57534 11.1583 6.76232 10.6667 8 10.6667C9.23768 10.6667 10.4247 11.1583 11.2998 12.0335C12.175 12.9087 12.6667 14.0957 12.6667 15.3333C12.6667 15.5101 12.7369 15.6797 12.8619 15.8047C12.987 15.9298 13.1565 16 13.3333 16C13.5101 16 13.6797 15.9298 13.8047 15.8047C13.9298 15.6797 14 15.5101 14 15.3333C13.9982 13.7426 13.3655 12.2175 12.2407 11.0926C11.1159 9.9678 9.59076 9.3351 8 9.33333Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="navigation__icons-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_14_208)">
+                    <path
+                      d="M14 4H12C12 2.93913 11.5786 1.92172 10.8284 1.17157C10.0783 0.421427 9.06087 0 8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4H2C1.46957 4 0.960859 4.21071 0.585786 4.58579C0.210714 4.96086 0 5.46957 0 6L0 12.6667C0.00105857 13.5504 0.352588 14.3976 0.97748 15.0225C1.60237 15.6474 2.4496 15.9989 3.33333 16H12.6667C13.5504 15.9989 14.3976 15.6474 15.0225 15.0225C15.6474 14.3976 15.9989 13.5504 16 12.6667V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4ZM8 1.33333C8.70724 1.33333 9.38552 1.61428 9.88562 2.11438C10.3857 2.61448 10.6667 3.29276 10.6667 4H5.33333C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61428 7.29276 1.33333 8 1.33333ZM14.6667 12.6667C14.6667 13.1971 14.456 13.7058 14.0809 14.0809C13.7058 14.456 13.1971 14.6667 12.6667 14.6667H3.33333C2.8029 14.6667 2.29419 14.456 1.91912 14.0809C1.54405 13.7058 1.33333 13.1971 1.33333 12.6667V6C1.33333 5.82319 1.40357 5.65362 1.5286 5.5286C1.65362 5.40357 1.82319 5.33333 2 5.33333H4V6.66667C4 6.84348 4.07024 7.01305 4.19526 7.13807C4.32029 7.2631 4.48986 7.33333 4.66667 7.33333C4.84348 7.33333 5.01305 7.2631 5.13807 7.13807C5.2631 7.01305 5.33333 6.84348 5.33333 6.66667V5.33333H10.6667V6.66667C10.6667 6.84348 10.7369 7.01305 10.8619 7.13807C10.987 7.2631 11.1565 7.33333 11.3333 7.33333C11.5101 7.33333 11.6797 7.2631 11.8047 7.13807C11.9298 7.01305 12 6.84348 12 6.66667V5.33333H14C14.1768 5.33333 14.3464 5.40357 14.4714 5.5286C14.5964 5.65362 14.6667 5.82319 14.6667 6V12.6667Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_14_208">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <div class="navigation__icons-item-badge"><p>22</p></div>
+              </div>
+            </div>
+            <div class="navigation__filter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_9841)">
+                  <path
+                    d="M14.25 8.25H0.75C0.551088 8.25 0.360322 8.17098 0.21967 8.03033C0.0790176 7.88968 0 7.69891 0 7.5C0 7.30109 0.0790176 7.11032 0.21967 6.96967C0.360322 6.82902 0.551088 6.75 0.75 6.75H14.25C14.4489 6.75 14.6397 6.82902 14.7803 6.96967C14.921 7.11032 15 7.30109 15 7.5C15 7.69891 14.921 7.88968 14.7803 8.03033C14.6397 8.17098 14.4489 8.25 14.25 8.25ZM14.25 3H0.75C0.551088 3 0.360322 2.92098 0.21967 2.78033C0.0790176 2.63968 0 2.44891 0 2.25C0 2.05109 0.0790176 1.86032 0.21967 1.71967C0.360322 1.57902 0.551088 1.5 0.75 1.5H14.25C14.4489 1.5 14.6397 1.57902 14.7803 1.71967C14.921 1.86032 15 2.05109 15 2.25C15 2.44891 14.921 2.63968 14.7803 2.78033C14.6397 2.92098 14.4489 3 14.25 3ZM14.25 13.5H0.75C0.551088 13.5 0.360322 13.421 0.21967 13.2803C0.0790176 13.1397 0 12.9489 0 12.75C0 12.5511 0.0790176 12.3603 0.21967 12.2197C0.360322 12.079 0.551088 12 0.75 12H14.25C14.4489 12 14.6397 12.079 14.7803 12.2197C14.921 12.3603 15 12.5511 15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_9841">
+                    <rect width="15" height="15" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="banner-page__title">
+          <h1>Protection with style</h1>
+        </div>
+      </section>
+      <section class="seller-page">
+        <div class="seller-page__container">
+          <h2 class="seller-page__tittle">Best Sellers</h2>
+          <div class="row">
+            <div class="col" style="--col-lg: 3; --col-md: 6">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="assets/products/product1.png" alt="" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__info-name">
+                    <h6>Hills</h6>
+                  </div>
+                  <div class="product-card__info-price"><h6>$76</h6></div>
+                  <div class="produc-card__info-option">
+                    <div class="product-card__info-option-color color-1"></div>
+                    <div class="product-card__info-option-color color-2"></div>
+                    <div class="product-card__info-option-color color-3"></div>
+                    <div class="product-card__info-option-color color-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--col-lg: 3; --col-md: 6">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="assets/products/product1.png" alt="" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__info-name">
+                    <h6>Hills</h6>
+                  </div>
+                  <div class="product-card__info-price"><h6>$76</h6></div>
+                  <div class="produc-card__info-option">
+                    <div class="product-card__info-option-color color-1"></div>
+                    <div class="product-card__info-option-color color-2"></div>
+                    <div class="product-card__info-option-color color-3"></div>
+                    <div class="product-card__info-option-color color-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--col-lg: 3; --col-md: 6">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="assets/products/product1.png" alt="" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__info-name">
+                    <h6>Hills</h6>
+                  </div>
+                  <div class="product-card__info-price"><h6>$76</h6></div>
+                  <div class="produc-card__info-option">
+                    <div class="product-card__info-option-color color-1"></div>
+                    <div class="product-card__info-option-color color-2"></div>
+                    <div class="product-card__info-option-color color-3"></div>
+                    <div class="product-card__info-option-color color-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--col-lg: 3; --col-md: 6">
+              <div class="product-card">
+                <div class="product-card__img">
+                  <img src="assets/products/product1.png" alt="" />
+                </div>
+                <div class="product-card__info">
+                  <div class="product-card__info-name">
+                    <h6>Hills</h6>
+                  </div>
+                  <div class="product-card__info-price"><h6>$76</h6></div>
+                  <div class="produc-card__info-option">
+                    <div class="product-card__info-option-color color-1"></div>
+                    <div class="product-card__info-option-color color-2"></div>
+                    <div class="product-card__info-option-color color-3"></div>
+                    <div class="product-card__info-option-color color-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-banner-page">
+        <div class="shop-banner-page__container">
+          <div class="shop-banner-page__btn">
+            <button class="shop-banner-page__btn-navigate">
+              <a href="#"><p>Shop all</p></a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="multi-page">
+        <div class="multi-page-container">
+          <h4 class="multi-page__title">Extreme Cases MagSafe Compatible</h4>
+        </div>
+        <div class="multi-page__line"></div>
+        <div class="multi-page__body">
+          <div class="row">
+            <div class="col" style="--col-lg: 4">
+              <div class="multi-card">
+                <p class="multi-card__num">01</p>
+                <p class="multi-card__desc">
+                  Essentials by CASETiFY™ The Beauty of Simplicity
+                </p>
+                <img src="assets/multi/image67.png" alt="" />
+              </div>
+            </div>
+            <div class="col" style="--col-lg: 4">
+              <div class="multi-card">
+                <p class="multi-card__num">02</p>
+                <p class="multi-card__desc">
+                  Defy Gravity With The New Bounce Case
+                </p>
+                <img src="assets/multi/img2.png" alt="" />
+              </div>
+            </div>
+            <div class="col" style="--col-lg: 4">
+              <div class="multi-card">
+                <p class="multi-card__num">03</p>
+                <p class="multi-card__desc">
+                  Spice up your mirror selfies with a little Y2K
+                </p>
+                <img src="assets/multi/image68.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
