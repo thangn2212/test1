@@ -6,34 +6,27 @@
   padding-left: $grid-container-gap;
   padding-right: $grid-container-gap;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc($grid-container-gap / -2);
   margin-right: calc($grid-container-gap / -2);
 }
+
 .col {
   width: calc(var(--col-lg) / $grid * 100%);
   padding-left: calc($grid-container-gap / 2);
   padding-right: calc($grid-container-gap / 2);
   padding-bottom: calc($grid-container-gap);
 }
-// @media (min-width: 576px) {
-//   .col {
-//     width: calc(var(--col-md) / $grid * 100%);
-//   }
-// }
 
-// @media (min-width: 576px) {
-//   .col {
-//     width: calc(var(--col-md) / $grid * 100%);
-//   }
-// }
 @media (max-width: 992px) {
   .col {
     width: calc(var(--col-md) / $grid * 100%);
   }
 }
+
 @media (min-width: 992px) and (max-width: 1592px) {
   .col {
     width: calc(var(--col-lg) / $grid * 100%);

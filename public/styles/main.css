@@ -474,6 +474,7 @@ h6 {
 
 .multi-card {
   position: relative;
+  height: 100%;
 }
 
 .multi-card__num {
@@ -484,10 +485,15 @@ h6 {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
   letter-spacing: -0.16px;
   padding-left: 32px;
   padding-top: 29px;
+}
+
+.multi-card__num--02 {
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
 
 .multi-card__desc {
@@ -500,7 +506,17 @@ h6 {
   letter-spacing: -0.2px;
   padding-left: 32px;
   overflow: hidden;
-  padding-top: 470px;
+  padding-top: 500px;
+  max-width: 306px;
+}
+
+.multi-card__desc--02 {
+  color: rgb(255, 255, 255);
+}
+
+.multi-card__img {
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (min-width: 992px) {
@@ -510,8 +526,23 @@ h6 {
   }
 }
 @media (max-width: 991px) {
+  .multi-page-container {
+    padding-top: 49px;
+    padding-bottom: 25px;
+    padding-left: 23px;
+  }
   .multi-page__title {
     max-width: 500px;
+  }
+  .row {
+    width: 100vw;
+    text-align: center;
+  }
+  .col:not(:first-child) {
+    display: none;
+  }
+  .multi-card {
+    height: 100%;
   }
 }
 
